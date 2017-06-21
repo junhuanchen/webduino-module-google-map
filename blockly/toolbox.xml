@@ -1,0 +1,143 @@
+<category id="catGoogleMaps">
+  <category id="catMaps">
+    <block type="variables_set">
+      <field name="VAR">map</field>
+      <value name="VALUE">
+        <block type="gmaps_new">
+          <value name="center_">
+            <block type="location_latlng">
+              <value name="lat_">
+                <block type="math_number">
+                  <field name="NUM">22.6044672</field>
+                </block>
+              </value>
+              <value name="lng_">
+                <block type="math_number">
+                  <field name="NUM">120.2978777</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <value name="zoom_">
+            <block type="math_number">
+              <field name="NUM">15</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block type="gmaps_height">
+      <value name="height_">
+        <block type="text">
+          <field name="TEXT">500px</field>
+        </block>
+      </value>
+    </block>
+    <block type="gmaps_width">
+      <value name="width_">
+        <block type="text">
+          <field name="TEXT">100%</field>
+        </block>
+      </value>
+    </block>
+    <block type="gmaps_zoom">
+      <value name="zoom_">
+        <block type="math_number">
+          <field name="NUM">15</field>
+        </block>
+      </value>
+    </block>
+    <block type="gmaps_panto">
+      <value name="location_">
+        <block type="location_latlng">
+          <value name="lat_">
+            <block type="math_number">
+              <field name="NUM">22.6044672</field>
+            </block>
+          </value>
+          <value name="lng_">
+            <block type="math_number">
+              <field name="NUM">120.2978777</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block type="gmaps_getcenter"></block>
+  </category>
+  <category id="catLocation">
+    <block type="location_latlng">
+      <value name="lat_">
+        <block type="math_number">
+          <field name="NUM">22.6044672</field>
+        </block>
+      </value>
+      <value name="lng_">
+        <block type="math_number">
+          <field name="NUM">120.2978777</field>
+        </block>
+      </value>
+    </block>
+    <block type="location_address">
+      <value name="address_">
+        <block type="text">
+          <field name="TEXT">Webduino</field>
+        </block>
+      </value>
+    </block>
+  </category>
+  <category id="catMarker">
+    <block type="variables_set">
+      <field name="VAR">marker</field>
+      <value name="VALUE">
+        <block type="marker_new">
+          <value name="map_">
+            <block type="variables_get">
+              <field name="VAR" class="textVar">map</field>
+            </block>
+          </value>
+          <value name="location_">
+            <block type="location_latlng">
+              <value name="lat_">
+                <block type="math_number">
+                  <field name="NUM">22.6044672</field>
+                </block>
+              </value>
+              <value name="lng_">
+                <block type="math_number">
+                  <field name="NUM">120.2978777</field>
+                </block>
+              </value>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block type="marker_setinfo">
+      <value name="info_">
+        <block type="text">
+          <field name="TEXT">...</field>
+        </block>
+      </value>
+    </block>
+    <block type="marker_showinfo"></block>
+    <block type="marker_hideinfo"></block>
+    <block type="marker_setlocation">
+      <value name="location_">
+        <block type="location_latlng">
+          <value name="lat_">
+            <block type="math_number">
+              <field name="NUM">22.6044672</field>
+            </block>
+          </value>
+          <value name="lng_">
+            <block type="math_number">
+              <field name="NUM">120.2978777</field>
+            </block>
+          </value>
+        </block>
+      </value>
+    </block>
+    <block type="marker_getposition"></block>
+  </category>
+</category>

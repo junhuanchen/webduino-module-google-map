@@ -1,0 +1,18 @@
+{
+  "name": "webduino-module-google-map",
+  "description": "Google Maps Module for Webduino",
+  "authors": "",
+  "license": "ISC",
+  "keywords": [
+    "arduino",
+    "webduino",
+    "google-maps"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

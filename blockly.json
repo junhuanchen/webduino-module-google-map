@@ -1,0 +1,15 @@
+{
+  "types": ["gmaps_new", "gmaps_height", "gmaps_width", "gmaps_zoom", "gmaps_panto", "gmaps_getcenter", "location_latlng", "location_address", "marker_new", "marker_setinfo", "marker_setlocation", "marker_showinfo", "marker_hideinfo", "marker_getposition"],
+  "category": "catPlus",
+  "scripts": [
+    "blockly/blocks.js",
+    "blockly/javascript.js"
+  ],
+  "dependencies": [
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyALElAbcPdp47CszdlGTMO97QjIB5J1QGc&ext=.js",
+    "GoogleMaps-blockly.js"
+  ],
+  "msg": "blockly/msg",
+  "blocksMsg": "blockly/msg/blocks",
+  "toolbox": "blockly/toolbox.xml"
+}
