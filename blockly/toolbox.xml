@@ -97,18 +97,7 @@
             </block>
           </value>
           <value name="location_">
-            <block type="location_latlng">
-              <value name="lat_">
-                <block type="math_number">
-                  <field name="NUM">22.6044672</field>
-                </block>
-              </value>
-              <value name="lng_">
-                <block type="math_number">
-                  <field name="NUM">120.2978777</field>
-                </block>
-              </value>
-            </block>
+            <block type="gmaps_getcenter"></block>
           </value>
         </block>
       </value>
