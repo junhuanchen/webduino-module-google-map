@@ -102,14 +102,13 @@
         </block>
       </value>
     </block>
-    <block type="marker_setinfo">
+    <block type="marker_setinfoAndShow">
       <value name="info_">
         <block type="text">
           <field name="TEXT">...</field>
         </block>
       </value>
     </block>
-    <block type="marker_showinfo"></block>
     <block type="marker_hideinfo"></block>
     <block type="marker_setlocation">
       <value name="location_">

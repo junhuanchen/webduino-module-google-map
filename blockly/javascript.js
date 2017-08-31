@@ -66,6 +66,13 @@ Blockly.JavaScript['marker_setinfo'] = function (block) {
   return code;
 };
 
+Blockly.JavaScript['marker_setinfoAndShow'] = function (block) {
+  var variable_marker_ = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('marker_'), Blockly.Variables.NAME_TYPE);
+  var value_info_ = Blockly.JavaScript.valueToCode(block, 'info_', Blockly.JavaScript.ORDER_ATOMIC);
+  var code = variable_marker_ + '.infoContent = ' + value_info_ + ';\nshowInfo(' + variable_marker_ + ');\n';
+  return code;
+};
+
 Blockly.JavaScript['marker_setlocation'] = function (block) {
   var variable_marker_ = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('marker_'), Blockly.Variables.NAME_TYPE);
   var value_location_ = Blockly.JavaScript.valueToCode(block, 'location_', Blockly.JavaScript.ORDER_ATOMIC);

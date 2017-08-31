@@ -141,6 +141,20 @@ Blockly.Blocks['marker_setinfo'] = {
   }
 };
 
+Blockly.Blocks['marker_setinfoAndShow'] = {
+  init: function () {
+    this.appendValueInput("info_")
+      .setCheck(null)
+      .appendField(new Blockly.FieldVariable("marker"), "marker_")
+      .appendField(Blockly.Msg.GMAPS_OPEN_INFO);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(65);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
 Blockly.Blocks['marker_setlocation'] = {
   init: function () {
     this.appendValueInput("location_")
