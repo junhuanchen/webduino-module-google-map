@@ -52,6 +52,11 @@ Blockly.JavaScript['location_address'] = function (block) {
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 
+Blockly.JavaScript['location_current'] = function (block) {
+  var code = 'await getCurrentPosition()';
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+};
+
 Blockly.JavaScript['marker_new'] = function (block) {
   var value_map_ = Blockly.JavaScript.valueToCode(block, 'map_', Blockly.JavaScript.ORDER_ATOMIC);
   var value_location_ = Blockly.JavaScript.valueToCode(block, 'location_', Blockly.JavaScript.ORDER_ATOMIC);

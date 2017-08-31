@@ -84,11 +84,27 @@
     });
   }
 
+  function getCurrentPosition() {
+    return new Promise(function (resolve, reject) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        resolve({ lat: position.coords.latitude, lng: position.coords.longitude });
+      }, function () {
+        console && console.log('Cannot get current position!');
+        reject();
+      }, {
+        enableHighAccuracy: true,
+        maximumAge: 30000,
+        timeout: 27000
+      });
+    });
+  }
+
   window.createMap = createMap;
   window.createMarker = createMarker;
   window.showInfo = showInfo;
   window.hideInfo = hideInfo;
   window.geocode = geocode;
   window.reverseGeocode = reverseGeocode;
+  window.getCurrentPosition = getCurrentPosition;
 
 }(window, window.document, window.jQuery, window.google.maps));

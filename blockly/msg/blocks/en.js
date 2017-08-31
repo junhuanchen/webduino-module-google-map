@@ -7,6 +7,7 @@ Blockly.Msg.GMAPS_GET_CENTER = "'s center location";
 Blockly.Msg.GMAPS_LATITUDE = 'latitude';
 Blockly.Msg.GMAPS_LONGITUDE = 'longitude';
 Blockly.Msg.GMAPS_ADDRESS = 'address';
+Blockly.Msg.GMAPS_CURRENT = 'current location';
 Blockly.Msg.GMAPS_MAP = 'marker, map';
 Blockly.Msg.GMAPS_LOCATION = 'location';
 Blockly.Msg.GMAPS_SET_INFO = 'set info';

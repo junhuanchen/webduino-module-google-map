@@ -7,6 +7,7 @@ Blockly.Msg.GMAPS_GET_CENTER = '的中心點位置';
 Blockly.Msg.GMAPS_LATITUDE = '緯度';
 Blockly.Msg.GMAPS_LONGITUDE = '經度';
 Blockly.Msg.GMAPS_ADDRESS = '地址';
+Blockly.Msg.GMAPS_CURRENT = '現在位置';
 Blockly.Msg.GMAPS_MAP = '標記，地圖';
 Blockly.Msg.GMAPS_LOCATION = '位置';
 Blockly.Msg.GMAPS_SET_INFO = '設定資訊';

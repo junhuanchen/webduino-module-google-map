@@ -111,6 +111,18 @@ Blockly.Blocks['location_address'] = {
   }
 };
 
+Blockly.Blocks['location_current'] = {
+  init: function () {
+    this.appendDummyInput()
+      .appendField(Blockly.Msg.GMAPS_CURRENT);
+    this.setInputsInline(true);
+    this.setOutput(true, null);
+    this.setColour(230);
+    this.setTooltip('');
+    this.setHelpUrl('http://www.example.com/');
+  }
+};
+
 Blockly.Blocks['marker_new'] = {
   init: function () {
     this.appendValueInput("map_")
