@@ -2,7 +2,7 @@
   "name": "webduino-module-google-map",
   "description": "Google Maps Module for Webduino",
   "authors": "",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "arduino",
     "webduino",
